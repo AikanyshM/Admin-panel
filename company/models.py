@@ -5,7 +5,7 @@ class Block(models.Model):
     block_number = models.CharField(max_length=5)
     entrance_number = models.IntegerField()
     floor_number = models.IntegerField()
-    appartment_number_per_floor = models.IntegerField()
+    apartment_number_per_floor = models.IntegerField()
 
     def __str__(self):
         return f'блок {self.block_number}'
